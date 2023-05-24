@@ -87,16 +87,7 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("❤️‍🔥Main Channel❤️‍🔥", url="https://t.me/rubanencodes")
-                ],
-                [
-                    InlineKeyboardButton("REQUEST😇", url="https://t.me/+BTloleyZM1IxMzhl")
-                ],
-                [
-                    InlineKeyboardButton("❤️SUPPORT", url="https://t.me/ruban4ksupport"),
                     InlineKeyboardButton("😊About Me", callback_data = "about")
-                ]
             ]
         )
         await message.reply_text(
