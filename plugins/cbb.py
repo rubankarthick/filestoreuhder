@@ -8,14 +8,14 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "about": 
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>Ruban</a>\n○ Channel : @autofilterbotsale\n○ Support Group : @ruban4ksupport</b>",
-            disable_web_page_preview = True,
+            text = f"<b>🧑🏻‍💻 Bot Creator :</b> <a href='https://www.ruban96.online/'> @RUBAN </a>",
+            disable_web_page_preview = False,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close 🔒", callback_data = "close")
+                        InlineKeyboardButton("🔒 Close", callback_data = "close")
                     ]
                 ]
             )
