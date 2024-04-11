@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6422440797:AAEOC7Qoe0anXjFz8xUqy-G-Rjwq0De59rM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "25632035"))
@@ -28,7 +28,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6094386527"))
 PORT = os.environ.get("PORT", "8097")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ruban9820:karthi9820@fileshare.nknsovr.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "REFILESHARE")
 
 #force sub channel id, if you want enable force sub
@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001654526637"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "👋 Hello {first}\nI am @RE_MOVIES Official Files and Link Share Bot.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello 🐾 𝗗 ∆ 𝗡 𝗬🕊️❤️\n\nI am a File Share Bot Of @TEAMUHD. ❤️Thank You for using our community❤️")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6094386527").split()):
