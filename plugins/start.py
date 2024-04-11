@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong..!😢\n Contact Admin @reoffadminbot")
+            await message.reply_text("Something went wrong..!😢\n Contact Admin @reteamadminbot")
             return
         await temp_msg.delete()
 
@@ -83,17 +83,19 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🎬 MAIN CHANNEL 🎬", url="https://t.me/+6pdw2jn048w1Zjg1")
+                    InlineKeyboardButton("🎬 MAIN CHANNEL 🎬", url="https://t.me/+gqpU_4qsYAFmY2U1")
                 ],
                 [
-                    InlineKeyboardButton("📽️ UHD MOVIES/SERIES 📽️", url="https://t.me/REMOVIESDUB")
+                    InlineKeyboardButton("📽️ UHD MOVIES/SERIES 📽️", url="https://t.me/+abo3FyAP1hE5MTI9")
                 ],
                 [
                     InlineKeyboardButton("😎 MORE FROM US 📢", callback_data = "morefromus")
                 ],
                 [
-                    InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+rucqp8Ao-soyMDU1"),
-                    InlineKeyboardButton("❔ HELP ❓", url="http://t.me/reoffadminbot")
+                    InlineKeyboardButton("📽️ BACKUP CHANNEL 📽️", url="https://t.me/TEAMUHDBACKUP")
+                ],
+                [
+                    InlineKeyboardButton("❔ HELP ❓", url="http://t.me/reteamadminbot")
                 ],
                 [
                     InlineKeyboardButton("❕ ABOUT ❗", callback_data = "about"),
